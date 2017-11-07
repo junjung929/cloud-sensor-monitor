@@ -1,0 +1,31 @@
+export default function() {
+    return [
+        {name:'dummy1', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy2', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy3', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy4', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy5', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy6', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy7', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy8', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy9', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy10', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy11', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy12', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy13', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy14', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy15', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy16', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy17', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy18', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy19', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy20', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy21', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy22', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy23', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy24', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy25', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy26', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0},
+        {name:'dummy27', heart_rate: 0, respiration_rate: 0, relative_stroke_volue: 0, heart_rate_varaiability: 0, measured_signal_strength: 0}
+    ];
+}

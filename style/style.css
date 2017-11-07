@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+div {
+    border: 1px black solid;
+}
+.divisionLine {
+    clear: both;
+}
+li:hover {
+    cursor: pointer;
+}
