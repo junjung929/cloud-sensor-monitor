@@ -27,6 +27,7 @@ class FloortDetail extends Component {
         }
         return (
             <div>
+                <h3 className="white text-center">Room List on {this.props.floor.number} floor</h3>
                 {this.renderThumb()}
             </div>
         );

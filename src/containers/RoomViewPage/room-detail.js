@@ -10,8 +10,8 @@ class RoomDetail extends Component {
             if(bed.floor == this.props.room.floor && bed.room == this.props.room.number){
                 return (
                     <div 
-                        key={`roomThumb-${bed.name}`}
-                        className="roomThumb col-sm-4 selectable" 
+                        key={`bedThumb-${bed.name}`}
+                        className="bedThumb col-sm-4 selectable" 
                         onClick={() => {this.props.selectBed(bed), this.props.selectContent('bed')}}>
                         <div>
                             <img className='thumbImg' src="http://ext.fmkorea.com/files/attach/new/20160809/486263/1104102/433434686/73b83a6230b7079608ccf48237c627e9.jpg" />

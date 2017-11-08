@@ -12,9 +12,12 @@ class BedList extends Component {
         return (
           <li
             key={bed.name}
-            onClick={() => {this.props.selectBed(bed), this.props.selectContent('bed')}}
             className="list-group-item">
-            {bed.name}
+            <a
+              onClick={() => {this.props.selectBed(bed), this.props.selectContent('bed')}}
+              className="list-group-item">
+              {bed.name}
+            </a>
           </li>
         );
       }
