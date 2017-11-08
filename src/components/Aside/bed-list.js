@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectBed } from '../../actions/index';
+import { selectBed, selectContent } from '../../actions/index';
 import { bindActionCreators } from 'redux';
 import * as actions from '../../actions';
 
@@ -12,7 +12,7 @@ class BedList extends Component {
         return (
           <li
             key={bed.name}
-            onClick={() => this.props.selectBed(bed)}
+            onClick={() => {this.props.selectBed(bed), this.props.selectContent('bed')}}
             className="list-group-item">
             {bed.name}
           </li>
@@ -39,7 +39,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectBed: selectBed }, dispatch);
+  return bindActionCreators({ selectBed: selectBed, selectContent: selectContent }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(BedList);

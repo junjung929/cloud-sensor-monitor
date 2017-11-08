@@ -3,9 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import Header from './Header';
 import Aside from './Aside';
-import BedViewPage from '../containers/BedViewPage';
+import Container from '../containers';
 import Footer from './Footer';
-
 
 export default class App extends Component {
   render() {
@@ -13,7 +12,7 @@ export default class App extends Component {
     	<div>
 	    	<Header />
 	    	<Aside />
-				<BedViewPage />
+				<Container />
 				<div className="divisionLine" />
 	    	<Footer />
     	</div>

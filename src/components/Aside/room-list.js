@@ -1,32 +1,34 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectRoom } from '../../actions/index';
+import { selectRoom, selectContent } from '../../actions/index';
 import BedList from './bed-list';
 import { bindActionCreators } from 'redux';
-import * as actions from '../../actions';
 
 class RoomList extends Component {
-  renderRooms(roomNumber){
-    if(!this.props.selectedRoom){return}
-    if(this.props.selectedRoom.number == roomNumber){
+  renderRooms(roomNumber) {
+    if (!this.props.selectedRoom) { return }
+    if (this.props.selectedRoom.number == roomNumber) {
       return <BedList />
     }
   }
   renderList() {
     return this.props.rooms.map((room) => {
-      if(room.floor == this.props.floor.number){
+      if (room.floor == this.props.floor.number) {
         return (
           <li
-            key={room.number+"room"}
-            onClick={() => this.props.selectRoom(room)}
-            className="list-group-item">
-            Room No.{room.number}
+            className="list-group-item"
+            key={room.number + "room"}>
+            <a
+              onClick={() => { this.props.selectRoom(room), this.props.selectContent('room') }}
+              className="list-group-item">
+              Room No.{room.number}
+            </a>
             {this.renderRooms(room.number)}
           </li>
         );
-      } 
+      }
     });
-  } 
+  }
   render() {
     return (
       <ul className="list-group">
@@ -38,15 +40,15 @@ class RoomList extends Component {
 }
 function mapStateToProps(state) {
   return {
-      rooms: state.rooms,
-      selectedRoom: state.cloudSensorMonitor.room_selected,
-      floor: state.cloudSensorMonitor.floor_selected
-      
+    rooms: state.rooms,
+    selectedRoom: state.cloudSensorMonitor.room_selected,
+    floor: state.cloudSensorMonitor.floor_selected
+
   };
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ selectRoom: selectRoom }, dispatch);
+  return bindActionCreators({ selectRoom: selectRoom, selectContent: selectContent }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(RoomList);

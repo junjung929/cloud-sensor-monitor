@@ -19,3 +19,10 @@ export function selectBed(bed) {
         payload: bed
     };
 }
+export function selectContent(selectedContent) {
+    console.log('Selected content is ', selectedContent);
+    return {
+        type: 'CONTENT_SELECTED',
+        payload: selectedContent
+    };
+}

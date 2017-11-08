@@ -6,7 +6,6 @@ class Aside extends Component {
   render() {
     return (
     	<div className="sidebar col-sm-4">
-        {/* <FloorList /> */}
         <FloorList />
     	</div>
     );
