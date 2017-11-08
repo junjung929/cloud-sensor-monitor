@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { selectBed } from '../../actions/index';
 import { bindActionCreators } from 'redux';
+import * as actions from '../../actions';
+
 
 class BedList extends Component {
   renderList() {
@@ -32,7 +34,7 @@ class BedList extends Component {
 function mapStateToProps(state) {
   return {
       beds: state.beds,
-      room: state.activeRoom
+      room: state.cloudSensorMonitor.room_selected
   };
 }
 

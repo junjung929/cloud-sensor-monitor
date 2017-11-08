@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { selectRoom } from '../../actions/index';
 import BedList from './bed-list';
 import { bindActionCreators } from 'redux';
+import * as actions from '../../actions';
 
 class RoomList extends Component {
   renderRooms(roomNumber){
@@ -38,8 +39,8 @@ class RoomList extends Component {
 function mapStateToProps(state) {
   return {
       rooms: state.rooms,
-      selectedRoom: state.activeRoom,
-      floor: state.activeFloor
+      selectedRoom: state.cloudSensorMonitor.room_selected,
+      floor: state.cloudSensorMonitor.floor_selected
       
   };
 }

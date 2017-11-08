@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 class PatientDetail extends Component {
     render() {
         if(!this.props.bed){
             return <div>Select a bed to get started.</div>
         }
-        
+        console.log(this.props.bed);
         return (
             <div>
                 <h3>Details for:</h3>
@@ -19,7 +20,7 @@ class PatientDetail extends Component {
 
 function mapStateToProps(state) {
     return {
-       bed: state.activeBed
+        bed: state.cloudSensorMonitor.bed_selected
     };
 }
 

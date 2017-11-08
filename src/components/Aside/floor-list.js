@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { selectFloor } from '../../actions/index';
 import RoomList from './room-list';
 import { bindActionCreators } from 'redux';
+import * as actions from '../../actions';
 
 class FloorList extends Component {
   renderFloors(floorNumber){
@@ -37,7 +38,7 @@ class FloorList extends Component {
 function mapStateToProps(state) {
   return {
       floors: state.floors,
-      selectedFloor: state.activeFloor
+      selectedFloor: state.cloudSensorMonitor.floor_selected
   };
 }
 
